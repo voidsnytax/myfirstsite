@@ -4,6 +4,35 @@ document.addEventListener("DOMContentLoaded", () => {
         element.textContent = year;
     });
 
+    const themeToggle = document.querySelector(".theme-toggle");
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    const setTheme = (theme, persist = false) => {
+        const isDark = theme === "dark";
+        document.documentElement.dataset.theme = isDark ? "dark" : "light";
+        if (themeColor) themeColor.content = isDark ? "#101b29" : "#ffffff";
+        if (themeToggle) {
+            const label = isDark ? "Switch to light mode" : "Switch to dark mode";
+            themeToggle.setAttribute("aria-label", label);
+            themeToggle.setAttribute("title", label);
+            themeToggle.setAttribute("aria-pressed", String(isDark));
+        }
+        if (persist) {
+            try {
+                localStorage.setItem("jec-theme", isDark ? "dark" : "light");
+            } catch (error) {
+                console.warn("Unable to save the theme preference.", error);
+            }
+        }
+    };
+
+    setTheme(document.documentElement.dataset.theme);
+    if (themeToggle) {
+        themeToggle.addEventListener("click", () => {
+            const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+            setTheme(nextTheme, true);
+        });
+    }
+
     const menuButton = document.querySelector(".menu-toggle");
     const navigation = document.querySelector(".primary-nav");
     if (menuButton && navigation) {

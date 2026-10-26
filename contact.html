@@ -6,13 +6,23 @@
     <meta name="description" content="Contact Jaipur Engineering College to ask about admissions, course areas and campus information.">
     <meta name="theme-color" content="#102747">
     <title>Contact Us | Jaipur Engineering College</title>
+    <script>
+        (() => {
+            try {
+                const savedTheme = localStorage.getItem("jec-theme");
+                document.documentElement.dataset.theme = savedTheme === "dark" ? "dark" : "light";
+            } catch (error) {
+                console.warn("Unable to read the saved theme preference.", error);
+            }
+        })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Jaipur Engineering College home"><span class="brand-mark" aria-hidden="true">J<span>E</span></span><span class="brand-name">Jaipur Engineering College<small>Learn · Innovate · Lead</small></span></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button><nav class="primary-nav" id="primary-navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="courses.html">Courses</a><a href="contact.html" aria-current="page">Contact Us</a><a class="button button-small button-orange nav-apply" href="#enquiry">Apply Now <span aria-hidden="true">↗</span></a></nav></div></header>
+    <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Jaipur Engineering College home"><span class="brand-mark" aria-hidden="true">J<span>E</span></span><span class="brand-name">Jaipur Engineering College<small>Learn · Innovate · Lead</small></span></a><button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode"><svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg><svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"></path></svg><span class="sr-only">Switch theme</span></button><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button><nav class="primary-nav" id="primary-navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="courses.html">Courses</a><a href="contact.html" aria-current="page">Contact Us</a><a class="button button-small button-orange nav-apply" href="#enquiry">Apply Now <span aria-hidden="true">↗</span></a></nav></div></header>
     <main id="main">
         <section class="page-hero contact-hero"><div class="container page-hero-content"><p class="eyebrow eyebrow-light"><span></span> We’re here to help</p><h1>Let’s start a<br><em>conversation.</em></h1><p>Have a question about course areas or the admissions process? Send us a message.</p></div></section>
         <section class="section contact-section"><div class="container contact-layout">
