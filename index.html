@@ -2,19 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-            text-align: center;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover Jaipur Engineering College: an inspiring place to explore engineering, technology and your future.">
+    <meta name="theme-color" content="#102747">
+    <title>Jaipur Engineering College | Build What’s Next</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Jaipur Engineering college</h1>
-    <P>in this college we are </P>
-    <a href="contact.html" target="_blank">contact</a>
-    <a href="about.html" target="_blank">about</a>
-    <a href="courses.html" target="_blank">courses</a>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="index.html" aria-label="Jaipur Engineering College home">
+                <span class="brand-mark" aria-hidden="true">J<span>E</span></span>
+                <span class="brand-name">Jaipur Engineering College<small>Learn · Innovate · Lead</small></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
+            <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Home</a><a href="about.html">About Us</a><a href="courses.html">Courses</a><a href="contact.html">Contact Us</a>
+                <a class="button button-small button-orange nav-apply" href="contact.html#enquiry">Apply Now <span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <section class="hero">
+            <img class="hero-image" src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=2000&q=85" alt="University campus surrounded by green trees" fetchpriority="high">
+            <div class="hero-shade"></div>
+            <div class="container hero-content">
+                <p class="eyebrow eyebrow-light"><span></span> The future starts here</p>
+                <h1>Shape Your Future with <em>Jaipur Engineering College</em></h1>
+                <p class="hero-copy">Build the knowledge, confidence and practical skills to take on tomorrow’s engineering challenges.</p>
+                <div class="button-row"><a class="button button-orange" href="courses.html">Explore Courses <span aria-hidden="true">→</span></a><a class="button button-outline-light" href="contact.html#enquiry">Apply Now <span aria-hidden="true">↗</span></a></div>
+                <p class="hero-note">A place to question, create and grow.</p>
+            </div>
+            <div class="hero-index" aria-hidden="true">01 <span>/ 04</span></div>
+        </section>
+        <section class="quick-facts" aria-label="College facts">
+            <div class="container facts-grid">
+                <div><strong>Engineering</strong><span>Curiosity meets capability</span></div>
+                <div><strong>Hands-on learning</strong><span>Ideas move beyond the classroom</span></div>
+                <div><strong>Future-ready</strong><span>Skills for a changing world</span></div>
+                <div><strong>Jaipur, Rajasthan</strong><span>A vibrant place to learn</span></div>
+            </div>
+        </section>
+        <section class="snapshot-section" aria-labelledby="snapshot-title">
+            <div class="container snapshot-inner">
+                <div class="snapshot-heading"><p class="eyebrow">College snapshot</p><h2 id="snapshot-title">The facts,<br><em>straight from JEC.</em></h2><p>Official figures were not provided for this website. Confirm current information with the college.</p></div>
+                <div class="snapshot-grid">
+                    <article><strong>To be confirmed</strong><span>Student community</span></article>
+                    <article><strong>To be confirmed</strong><span>Faculty team</span></article>
+                    <article><strong>To be confirmed</strong><span>Available programmes</span></article>
+                    <article><strong>Not provided</strong><span>Placement information</span></article>
+                </div>
+            </div>
+        </section>
+        <section class="section section-intro">
+            <div class="container intro-grid">
+                <div class="section-heading"><p class="eyebrow">Welcome to JEC</p><h2>Think boldly.<br><em>Build meaningfully.</em></h2></div>
+                <div class="intro-copy"><p class="body-large">Engineering is about seeing possibilities where others see problems. At Jaipur Engineering College, learning is a journey of discovery—grounded in strong fundamentals, shaped by curiosity and connected to the world around us.</p><a class="text-link" href="about.html">Get to know us <span aria-hidden="true">→</span></a></div>
+            </div>
+        </section>
+        <section class="section section-soft">
+            <div class="container">
+                <div class="section-top"><div class="section-heading"><p class="eyebrow">Explore your interests</p><h2>Find your field<br><em>of possibility.</em></h2></div><a class="text-link" href="courses.html">Explore all course areas <span aria-hidden="true">→</span></a></div>
+                <div class="course-preview-grid">
+                    <a class="course-preview" href="courses.html#computer-science"><span class="card-number">01 / COMPUTING</span><h3>Computer Science</h3><p>Explore how software, systems and data shape everyday life.</p><span class="card-arrow" aria-hidden="true">↗</span></a>
+                    <a class="course-preview" href="courses.html#ai-data-science"><span class="card-number">02 / EMERGING TECH</span><h3>AI &amp; Data Science</h3><p>Discover intelligent technologies and the ideas behind them.</p><span class="card-arrow" aria-hidden="true">↗</span></a>
+                    <a class="course-preview" href="courses.html#mechanical"><span class="card-number">03 / DESIGN &amp; MAKING</span><h3>Mechanical Engineering</h3><p>Turn an understanding of motion and materials into new designs.</p><span class="card-arrow" aria-hidden="true">↗</span></a>
+                </div>
+                <p class="fine-print">Course areas shown for exploration only. Please confirm current programme availability and admission details with the college.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container split-feature">
+                <div class="feature-image-wrap"><img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1000&q=80" alt="Engineering students working together on a practical project" loading="lazy"><span class="image-caption">Learning by doing</span></div>
+                <div class="feature-copy"><p class="eyebrow">More than a classroom</p><h2>A campus for<br><em>curious minds.</em></h2><p>Ask questions, test ideas and learn alongside people who share your drive. From practical learning to student-led activities, make space for every side of your potential.</p><ul class="check-list"><li>Practice through projects and collaboration</li><li>Build confidence in communication and teamwork</li><li>Explore interests inside and outside the classroom</li></ul><a class="button button-navy" href="about.html">Discover campus life <span aria-hidden="true">→</span></a></div>
+            </div>
+        </section>
+        <section class="section section-soft facilities-section">
+            <div class="container">
+                <div class="section-top"><div class="section-heading"><p class="eyebrow">Campus and community</p><h2>Room to explore.<br><em>Space to grow.</em></h2></div><p class="section-summary">Explore the kinds of experiences that can enrich an engineering education. Please confirm specific facilities and services with the college.</p></div>
+                <div class="facility-grid">
+                    <article class="facility-card"><img src="https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?auto=format&fit=crop&w=900&q=80" alt="Engineering workbench with equipment and instruments" loading="lazy"><div><span class="card-number">LEARN BY DOING</span><h3>Labs &amp; workshops</h3><p>Practical spaces bring engineering concepts closer to real-world application. Confirm available labs with JEC.</p></div></article>
+                    <article class="facility-card"><img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=900&q=80" alt="Quiet study space with bookshelves" loading="lazy"><div><span class="card-number">FIND YOUR FOCUS</span><h3>Learning spaces</h3><p>Places to study, share ideas and work together support an engaged campus experience.</p></div></article>
+                    <article class="facility-card"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80" alt="Students sharing ideas together on campus" loading="lazy"><div><span class="card-number">GROW TOGETHER</span><h3>Student development</h3><p>Collaboration, communication and campus activities can help students grow beyond their coursework.</p></div></article>
+                </div>
+            </div>
+        </section>
+        <section class="section placement-section">
+            <div class="container placement-inner"><div><p class="eyebrow">Career readiness</p><h2>Prepare for a<br><em>changing world.</em></h2></div><div><p>Build skills that matter in a changing workplace: problem-solving, practical thinking and collaboration. We don’t publish placement rates or employer claims here because official figures were not provided.</p><a class="text-link" href="contact.html#enquiry">Ask about career support <span aria-hidden="true">→</span></a></div><div class="placement-placeholder"><span>Placement highlights</span><strong>Official details to be confirmed</strong></div></div>
+        </section>
+        <section class="career-band"><div class="container career-content"><div><p class="eyebrow eyebrow-light">Your next chapter</p><h2>Ready to turn curiosity<br>into <em>possibility?</em></h2></div><a class="button button-orange" href="contact.html#enquiry">Talk to our team <span aria-hidden="true">↗</span></a></div></section>
+        <section class="section stories-section"><div class="container stories-inner"><div><p class="eyebrow">Student voices</p><h2>Every journey<br>has a <em>first step.</em></h2></div><div class="story-note"><span class="quote-mark" aria-hidden="true">“</span><p>We’re preparing a collection of student stories. Connect with the college to hear about the experiences and opportunities available on campus.</p><a class="text-link" href="contact.html">Start a conversation <span aria-hidden="true">→</span></a></div></div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-main">
+        <div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">J<span>E</span></span><span class="brand-name">Jaipur Engineering College<small>Learn · Innovate · Lead</small></span></a><p>Empowering curious minds to shape what comes next.</p></div>
+        <div class="footer-col"><h2>Explore</h2><a href="index.html">Home</a><a href="about.html">About Us</a><a href="courses.html">Courses</a><a href="contact.html">Contact Us</a></div>
+        <div class="footer-col"><h2>Get in touch</h2><p>Jaipur, Rajasthan, India<br><span class="muted">Please confirm the official campus address.</span></p><a href="tel:+910000000000">+91 00000 00000 <span class="muted">(placeholder)</span></a><a href="mailto:admissions@example.com">admissions@example.com <span class="muted">(placeholder)</span></a><a href="contact.html#enquiry">Ask an admissions question</a></div>
+        <div class="footer-col"><h2>Follow along</h2><p>Official social links will be added when confirmed.</p></div>
+    </div><div class="container footer-bottom"><span>© <span data-year>2026</span> Jaipur Engineering College. All rights reserved.</span><span>Information on this website should be confirmed with the college.</span></div></footer>
 </body>
 </html>

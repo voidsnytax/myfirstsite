@@ -2,42 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Jaipur Engineering College to ask about admissions, course areas and campus information.">
+    <meta name="theme-color" content="#102747">
+    <title>Contact Us | Jaipur Engineering College</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
 </head>
 <body>
-    <a href="courses.html" target="_blank">courses</a>
-    <a href="about.html" target="_blank">about</a>
-    <a href="index.html" target="_blank">index</a>
-        </nav>
-    </header>
-    <main>
-        <h1>our contact</h1>
-        <table>
-            <p>contacts</p>
-           <thead>
-            <tr><th>contact type</th><th>uses</th></tr>
-           </thead>
-           <tbody>
-            <tr><td> toll-free no. </td>   <td>6987545652</td></tr>
-            <tr><td> email</td>   <td>jeckukas@#123442</td></tr>
-             <tr><td> instagram</td>   <td>jec_</td></tr>
-           </tbody>
-        </table>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Jaipur Engineering College home"><span class="brand-mark" aria-hidden="true">J<span>E</span></span><span class="brand-name">Jaipur Engineering College<small>Learn · Innovate · Lead</small></span></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button><nav class="primary-nav" id="primary-navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="courses.html">Courses</a><a href="contact.html" aria-current="page">Contact Us</a><a class="button button-small button-orange nav-apply" href="#enquiry">Apply Now <span aria-hidden="true">↗</span></a></nav></div></header>
+    <main id="main">
+        <section class="page-hero contact-hero"><div class="container page-hero-content"><p class="eyebrow eyebrow-light"><span></span> We’re here to help</p><h1>Let’s start a<br><em>conversation.</em></h1><p>Have a question about course areas or the admissions process? Send us a message.</p></div></section>
+        <section class="section contact-section"><div class="container contact-layout">
+            <aside class="contact-aside"><p class="eyebrow">Get in touch</p><h2>We’d love<br>to hear <em>from you.</em></h2><p>Use the enquiry form or contact the college through its verified official channels. Contact details below are placeholders and must be confirmed.</p>
+                <div class="contact-detail"><span class="detail-icon" aria-hidden="true">⌖</span><div><h3>Visit</h3><p>Jaipur, Rajasthan, India<br><span class="muted">Official campus address to be confirmed</span></p></div></div>
+                <div class="contact-detail"><span class="detail-icon" aria-hidden="true">☎</span><div><h3>Phone</h3><p><a href="tel:+910000000000">+91 00000 00000</a><br><span class="muted">Placeholder — confirm official phone</span></p></div></div>
+                <div class="contact-detail"><span class="detail-icon" aria-hidden="true">@</span><div><h3>Email</h3><p><a href="mailto:admissions@example.com">admissions@example.com</a><br><span class="muted">Placeholder — confirm official email</span></p></div></div>
+                <div class="contact-detail"><span class="detail-icon" aria-hidden="true">◷</span><div><h3>Office hours</h3><p>Please contact the college to confirm current office hours.</p></div></div>
+                <div class="map-placeholder"><span aria-hidden="true">⌖</span><p>Campus map will be added once the verified campus address is available.</p></div>
+            </aside>
+            <section class="form-panel" id="enquiry"><p class="eyebrow">Enquiry form</p><h2>How can we <em>help?</em></h2><p class="form-intro">All fields marked <span aria-hidden="true">*</span> are required.</p>
+                <form id="contact-form" novalidate>
+                    <div class="form-row"><div class="form-field"><label for="name">Full name <span>*</span></label><input id="name" name="name" type="text" autocomplete="name" required minlength="2" placeholder="Your name"></div><div class="form-field"><label for="email">Email address <span>*</span></label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div></div>
+                    <div class="form-row"><div class="form-field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[+0-9() .-]{7,20}" placeholder="Your phone number"></div><div class="form-field"><label for="course">Course area of interest</label><select id="course" name="course"><option value="">Select an area (optional)</option><option>Computer Science Engineering</option><option>Artificial Intelligence &amp; Data Science</option><option>Mechanical Engineering</option><option>Civil Engineering</option><option>Electrical Engineering</option><option>Other / not sure yet</option></select></div></div>
+                    <div class="form-field"><label for="message">Your message <span>*</span></label><textarea id="message" name="message" rows="5" required minlength="10" placeholder="Tell us what you’d like to know"></textarea></div>
+                    <p class="form-disclaimer">This demo form does not send or store messages. A backend service must be connected before enquiries can be delivered to the college.</p>
+                    <button class="button button-orange form-submit" type="submit">Validate enquiry <span aria-hidden="true">→</span></button><p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+        </div></section>
     </main>
-    <form action="" method="post">
-        <label for="email" >email</label>
-        <input type="email" id="email"
-        name="email" required>
-        <button type="submit">apply</button>
-<br>
-        <label for="date" >date</label>
-        <input type="date" id="date"
-        name="date" required>
-        <br>
-        <label for="date" >password</label>
-        <input type="password" id="password"
-        name="password" required>
-    </form>
+    <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">J<span>E</span></span><span class="brand-name">Jaipur Engineering College<small>Learn · Innovate · Lead</small></span></a><p>Empowering curious minds to shape what comes next.</p></div><div class="footer-col"><h2>Explore</h2><a href="index.html">Home</a><a href="about.html">About Us</a><a href="courses.html">Courses</a><a href="contact.html">Contact Us</a></div><div class="footer-col"><h2>Get in touch</h2><p>Jaipur, Rajasthan, India<br><span class="muted">Please confirm the official campus address.</span></p><a href="tel:+910000000000">+91 00000 00000 <span class="muted">(placeholder)</span></a><a href="mailto:admissions@example.com">admissions@example.com <span class="muted">(placeholder)</span></a><a href="#enquiry">Ask an admissions question</a></div><div class="footer-col"><h2>Follow along</h2><p>Official social links will be added when confirmed.</p></div></div><div class="container footer-bottom"><span>© <span data-year>2026</span> Jaipur Engineering College. All rights reserved.</span><span>Information on this website should be confirmed with the college.</span></div></footer>
 </body>
 </html>

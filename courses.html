@@ -2,29 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore engineering course areas and ask Jaipur Engineering College about current programme availability.">
+    <meta name="theme-color" content="#102747">
+    <title>Course Areas | Jaipur Engineering College</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-    <a href="contact.html" target="_blank">contact</a>
-    <a href="about.html" target="_blank">about</a>
-    <a href="index.html" target="_blank">index</a>
-        </nav>
-    </header>
-    <main>
-        <h1>our courses</h1>
-        <table>
-            <p>B.tech courses 2026</p>
-           <thead>
-            <tr><th>courses</th><th>duration</th></tr>
-           </thead>
-           <body>
-            <tr><td> computer science </td>   <td>4years</td></tr>
-            <tr><td> mathematics</td>   <td>2years</td></tr>
-           </body>
-        </table>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="Jaipur Engineering College home"><span class="brand-mark" aria-hidden="true">J<span>E</span></span><span class="brand-name">Jaipur Engineering College<small>Learn · Innovate · Lead</small></span></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button><nav class="primary-nav" id="primary-navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="courses.html" aria-current="page">Courses</a><a href="contact.html">Contact Us</a><a class="button button-small button-orange nav-apply" href="contact.html#enquiry">Apply Now <span aria-hidden="true">↗</span></a></nav></div></header>
+    <main id="main">
+        <section class="page-hero courses-hero"><div class="container page-hero-content"><p class="eyebrow eyebrow-light"><span></span> Explore course areas</p><h1>Find the ideas<br>you want to <em>build on.</em></h1><p>Explore engineering disciplines, then contact the college to confirm which programmes are currently offered.</p></div></section>
+        <section class="section"><div class="container"><div class="course-page-heading"><div><p class="eyebrow">Possible disciplines</p><h2>Where will curiosity<br><em>take you?</em></h2></div><p>Course details below introduce common engineering disciplines. They are not an official list of Jaipur Engineering College programmes. Availability, duration, eligibility and admissions should be confirmed directly with the college.</p></div>
+            <div class="course-tools"><label class="search-box"><span class="sr-only">Search course areas</span><span aria-hidden="true">⌕</span><input type="search" id="course-search" placeholder="Search course areas" autocomplete="off"></label><div class="filter-buttons" role="group" aria-label="Filter course areas"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All areas</button><button class="filter-button" type="button" data-filter="computing" aria-pressed="false">Computing</button><button class="filter-button" type="button" data-filter="engineering" aria-pressed="false">Engineering</button></div></div>
+            <div class="course-grid" id="course-grid">
+                <article class="course-card" id="computer-science" data-category="computing" data-search="computer science engineering software programming systems">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Circuit board representing computer systems" loading="lazy"><div class="course-card-body"><span class="card-number">COMPUTING / 01</span><h3>Computer Science Engineering</h3><p>Explore software, computing systems and the principles behind digital products.</p><dl><div><dt>Duration</dt><dd>Confirm with the college</dd></div><div><dt>Eligibility</dt><dd>Confirm current criteria</dd></div></dl><a class="text-link" href="contact.html#enquiry">Enquire about this area <span aria-hidden="true">→</span></a></div>
+                </article>
+                <article class="course-card" id="ai-data-science" data-category="computing" data-search="artificial intelligence data science machine learning analytics">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80" alt="Abstract visualization of artificial intelligence" loading="lazy"><div class="course-card-body"><span class="card-number">COMPUTING / 02</span><h3>Artificial Intelligence &amp; Data Science</h3><p>Discover data, intelligent systems and the ways they can inform decisions.</p><dl><div><dt>Duration</dt><dd>Confirm with the college</dd></div><div><dt>Eligibility</dt><dd>Confirm current criteria</dd></div></dl><a class="text-link" href="contact.html#enquiry">Enquire about this area <span aria-hidden="true">→</span></a></div>
+                </article>
+                <article class="course-card" id="mechanical" data-category="engineering" data-search="mechanical engineering design machines materials energy">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80" alt="Mechanical engineering workshop equipment" loading="lazy"><div class="course-card-body"><span class="card-number">ENGINEERING / 03</span><h3>Mechanical Engineering</h3><p>Study the design, materials and systems that make machines and products work.</p><dl><div><dt>Duration</dt><dd>Confirm with the college</dd></div><div><dt>Eligibility</dt><dd>Confirm current criteria</dd></div></dl><a class="text-link" href="contact.html#enquiry">Enquire about this area <span aria-hidden="true">→</span></a></div>
+                </article>
+                <article class="course-card" id="civil" data-category="engineering" data-search="civil engineering infrastructure structures construction environment">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Modern architectural structure under construction" loading="lazy"><div class="course-card-body"><span class="card-number">ENGINEERING / 04</span><h3>Civil Engineering</h3><p>Explore structures, infrastructure and the built environment around us.</p><dl><div><dt>Duration</dt><dd>Confirm with the college</dd></div><div><dt>Eligibility</dt><dd>Confirm current criteria</dd></div></dl><a class="text-link" href="contact.html#enquiry">Enquire about this area <span aria-hidden="true">→</span></a></div>
+                </article>
+                <article class="course-card" id="electrical" data-category="engineering" data-search="electrical engineering power energy electronics circuits">
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=80" alt="Electricity pylons against the evening sky" loading="lazy"><div class="course-card-body"><span class="card-number">ENGINEERING / 05</span><h3>Electrical Engineering</h3><p>Learn about electrical systems, energy, circuits and the technologies they enable.</p><dl><div><dt>Duration</dt><dd>Confirm with the college</dd></div><div><dt>Eligibility</dt><dd>Confirm current criteria</dd></div></dl><a class="text-link" href="contact.html#enquiry">Enquire about this area <span aria-hidden="true">→</span></a></div>
+                </article>
+            </div><p class="empty-state" id="course-empty" hidden>No course areas match your search. Try another term or filter.</p>
+        </div></section>
+        <section class="notice-band"><div class="container notice-inner"><span class="notice-icon" aria-hidden="true">i</span><div><h2>Need official programme information?</h2><p>Ask the college to confirm active courses, programme duration, eligibility, fees and application dates before making a decision.</p></div><a class="button button-navy" href="contact.html#enquiry">Contact admissions <span aria-hidden="true">→</span></a></div></section>
     </main>
+    <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">J<span>E</span></span><span class="brand-name">Jaipur Engineering College<small>Learn · Innovate · Lead</small></span></a><p>Empowering curious minds to shape what comes next.</p></div><div class="footer-col"><h2>Explore</h2><a href="index.html">Home</a><a href="about.html">About Us</a><a href="courses.html">Courses</a><a href="contact.html">Contact Us</a></div><div class="footer-col"><h2>Get in touch</h2><p>Jaipur, Rajasthan, India<br><span class="muted">Please confirm the official campus address.</span></p><a href="tel:+910000000000">+91 00000 00000 <span class="muted">(placeholder)</span></a><a href="mailto:admissions@example.com">admissions@example.com <span class="muted">(placeholder)</span></a><a href="contact.html#enquiry">Ask an admissions question</a></div><div class="footer-col"><h2>Follow along</h2><p>Official social links will be added when confirmed.</p></div></div><div class="container footer-bottom"><span>© <span data-year>2026</span> Jaipur Engineering College. All rights reserved.</span><span>Information on this website should be confirmed with the college.</span></div></footer>
 </body>
 </html>
